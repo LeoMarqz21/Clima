@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://bootswatch.com/4/lux/bootstrap.min.css">
+  <link rel="shortcut icon" href="./sol.jpg" type="image/x-icon">
+  <title>App Weather</title>
+</head>
+<body>
+  <header class="container-fluid bg-dark">
+    <h1 class="text-center p-5 text-light">App Weather</h1>
+  </header>
+  <div class="container p-4">
+    <div class="row">
+      <div class="col-md-5 mx-auto text-center">
+        <div class="card bg-dark">
+          <div class="card-body">
+            <h1 id="weather-location" class="h3 text-light"></h1>
+            <h3 id="weather-description" class="h4 text-light"></h3>
+            <h3 id="weather-string" class="text-light"></h3>
+            <ul class="list-group mt-3">
+              <li id="weather-humidity" class="list-group-item m-1"></li>
+              <li id="weather-wind" class="list-group-item m-1"></li>
+            </ul> 
+          </div>
+        </div>
+        <div class="card mt-1">
+          <div class="card-body bg-dark">
+            <form id="wheather-form">
+              <div class="form-group">
+                <input type="text" id="city" class="form-control" placeholder="City" autofocus/>
+              </div>
+              <div class="form-group">
+                <input type="text" id="countryCode" class="form-control" placeholder="Country Code"/>
+              </div>
+              <div class="form-group">
+                <button class="btn btn-info btn-block" id="btn-weather-change">Save Changes</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./js/main.js" type="module"></script>
+</body>
+</html>
